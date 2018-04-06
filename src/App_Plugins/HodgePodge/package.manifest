@@ -1,6 +1,15 @@
 {
     propertyEditors: [
         {
+            alias: "Our.Umbraco.InlineCheckbox",
+            name: "Inline Checkbox",
+            editor: {
+                "hideLabel": true,
+                view: "~/App_Plugins/HodgePodge/propertyeditors/inline-checkbox.html",
+                valueType: "INT"
+            },
+        },
+        {
             alias: "Our.Umbraco.NamedDropdown",
             name:  "Named Dropdown",
             editor: {

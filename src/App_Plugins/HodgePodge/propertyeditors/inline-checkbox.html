@@ -1,0 +1,7 @@
+﻿<div class="umb-editor umb-boolean" ng-controller="Umbraco.PropertyEditors.BooleanController">
+    <input type="checkbox" ng-model="renderModel.value" id="{{model.alias}}" />
+    <label for="{{model.alias}}" title="{{model.alias}}">
+        <strong ng-bind-html="model.label"></strong>
+        <small ng-bind-html="model.description"></small>
+    </label>
+</div>
