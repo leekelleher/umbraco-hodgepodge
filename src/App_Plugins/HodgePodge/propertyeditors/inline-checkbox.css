@@ -1,5 +1,4 @@
 ﻿.inline-checkbox label {
-    margin-top: 1px;
-    margin-left: 5px;
+    margin: 1px auto -10px 5px;
     width: 90%;
 }
