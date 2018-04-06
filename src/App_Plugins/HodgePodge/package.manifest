@@ -92,5 +92,6 @@
     ],
     css: [
         "~/App_Plugins/HodgePodge/propertyeditors/inline-checkbox.css",
+        "~/App_Plugins/HodgePodge/backoffice/ui-shim.css"
     ]
 }
