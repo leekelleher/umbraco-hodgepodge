@@ -45,6 +45,14 @@
                     }
                 ]
             }
+        },
+        {
+            alias: "Our.Umbraco.TextboxPair",
+            name:  "Textbox Pair",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.html",
+                valueType: "JSON"
+            }
         }
     ],
     javascript: [
