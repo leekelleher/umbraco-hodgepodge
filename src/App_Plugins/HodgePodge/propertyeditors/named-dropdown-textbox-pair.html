@@ -1,0 +1,8 @@
+<div class="umb-editor" ng-controller="Our.Umbraco.NamedDropdownTextboxPair.Controller">
+
+    <div class="row-fluid">
+        <select class="span5 umb-dropdown" ng-model="model.value.key" ng-options="i.key as i.value for i in model.config.items"></select>
+        <input class="span6 offset1" type="text" ng-model="model.value.value">
+    </div>
+
+</div>

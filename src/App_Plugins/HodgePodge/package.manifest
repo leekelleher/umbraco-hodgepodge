@@ -22,6 +22,29 @@
                     }
                 ]
             }
+        },
+        {
+            alias: "Our.Umbraco.NamedDropdownTextboxPair",
+            name:  "Named Dropdown and Textbox Pair",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown-textbox-pair.html",
+                valueType: "JSON"
+            },
+            prevalues: {
+                fields: [
+                    {
+                        label: "Items",
+                        description: "Add or remove items for this list.",
+                        key: "items",
+                        view: "/App_Plugins/HodgePodge/prevalueeditors/name-value-options.html",
+                        validation: [
+                            {
+                                type: "Required"
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     ],
     javascript: [
