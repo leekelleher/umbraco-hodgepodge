@@ -89,5 +89,8 @@
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown-textbox-pair.js",
         "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.js",
         "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.js"
+    ],
+    css: [
+        "~/App_Plugins/HodgePodge/propertyeditors/inline-checkbox.css",
     ]
 }
