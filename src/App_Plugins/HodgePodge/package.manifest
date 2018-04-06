@@ -62,6 +62,24 @@
                 view: "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.html",
                 valueType: "JSON"
             }
+        },
+        {
+            alias: "Our.Umbraco.UtcDateTimePicker",
+            name: "UTC DateTime Picker",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.html",
+                valueType: "DATETIME"
+            },
+            prevalues: {
+                fields: [
+                    {
+                        label: "Date Format",
+                        description: "If left empty then the format is 'YYYY-MM-DD HH:mm:ss'. (see momentjs.com for supported formats)",
+                        key: "format",
+                        view: "textstring"
+                    }
+                ]
+            }
         }
     ],
     javascript: [
@@ -69,6 +87,7 @@
         "~/App_Plugins/HodgePodge/prevalueeditors/name-value-options.js",
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown.js",
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown-textbox-pair.js",
-        "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.js"
+        "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.js",
+        "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.js"
     ]
 }
