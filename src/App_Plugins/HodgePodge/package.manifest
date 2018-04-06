@@ -1,0 +1,31 @@
+{
+    propertyEditors: [
+        {
+            alias: "Our.Umbraco.NamedDropdown",
+            name:  "Named Dropdown",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown.html",
+                valueType: "STRING"
+            },
+            prevalues: {
+                fields: [
+                    {
+                        label: "Items",
+                        description: "Add or remove items for this list.",
+                        key: "items",
+                        view: "/App_Plugins/HodgePodge/prevalueeditors/name-value-options.html",
+                        validation: [
+                            {
+                                type: "Required"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    javascript: [
+        "~/App_Plugins/HodgePodge/prevalueeditors/name-value-options.js",
+        "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown.js",
+    ]
+}
