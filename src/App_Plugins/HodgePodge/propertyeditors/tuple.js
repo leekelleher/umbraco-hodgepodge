@@ -72,15 +72,9 @@ angular.module("umbraco").controller("Our.Umbraco.Tuple.Controller", [
             }
         };
 
-        //$scope.$watch("vm.controls", function (newVal, oldVal) {
-        //
-        //    console.log("watch", newVal, oldVal);
-        //
-        //}, true);
-
         var unsubscribe = $scope.$on("formSubmitting", function (ev, args) {
 
-            console.log("Tuple formSubmitting");
+            $scope.$broadcast("tupleFormSubmitting");
 
             var tmpValues = JSON.parse(JSON.stringify(config));
 
@@ -94,5 +88,32 @@ angular.module("umbraco").controller("Our.Umbraco.Tuple.Controller", [
         $scope.$on("$destroy", function () {
             unsubscribe();
         });
+    }
+]);
+
+angular.module("umbraco.directives").directive("tuplePropertyEditor", [
+    function () {
+
+        var link = function ($scope, $element, $attrs, $ctrl) {
+
+            var unsubscribe = $scope.$on("tupleFormSubmitting", function (ev, args) {
+                $scope.$broadcast("formSubmitting", { scope: $scope });
+            });
+
+            $scope.$on("$destroy", function () {
+                unsubscribe();
+            });
+        };
+
+        return {
+            require: "^form",
+            restrict: "E",
+            rep1ace: true,
+            link: link,
+            template: '<umb-property-editor model="control" />',
+            scope: {
+                control: "=model"
+            }
+        };
     }
 ]);
