@@ -1,0 +1,12 @@
+<div ng-controller="Our.Umbraco.Tuple.Controller as vm">
+
+    <!--<pre><xmp>{{vm.controls | json}}</xmp></pre>-->
+    <!--<pre><xmp>{{model.value | json}}</xmp></pre>-->
+
+    <ng-form>
+        <div class="{{vm.className}}" ng-repeat="control in vm.controls">
+            <umb-property-editor model="control" />
+        </div>
+    </ng-form>
+
+</div>

@@ -1,0 +1,37 @@
+﻿<div ng-controller="Our.Umbraco.DataTypePicker.Controller as vm">
+
+    <!--<pre><xmp>{{model.value | json}}</xmp></pre>-->
+    <!--<pre><xmp>{{vm.selectedDataTypes | json}}</xmp></pre>-->
+
+    <div ui-sortable="vm.sortableOptions" ng-model="vm.selectedDataTypes">
+        <umb-node-preview ng-repeat="item in vm.selectedDataTypes"
+                          icon="item.icon"
+                          name="item.name"
+                          description="item.description"
+                          sortable="vm.sortable"
+                          allow-remove="vm.allowRemove"
+                          allow-open="vm.allowOpen"
+                          allow-edit="vm.allowEdit"
+                          on-remove="vm.remove($index)"
+                          on-open="vm.open($index, item)"
+                          on-edit="vm.edit($index, item)">
+        </umb-node-preview>
+    </div>
+
+    <a ng-if="vm.allowAdd" class="umb-node-preview-add" href="" ng-click="vm.add()" prevent-default>
+        <localize key="general_add">Add</localize>
+    </a>
+
+    <umb-overlay ng-if="vm.editorPickerOverlay.show"
+                 model="vm.editorPickerOverlay"
+                 position="right"
+                 view="vm.editorPickerOverlay.view">
+    </umb-overlay>
+
+    <umb-overlay ng-if="vm.editorSettingsOverlay.show"
+                 model="vm.editorSettingsOverlay"
+                 position="right"
+                 view="vm.editorSettingsOverlay.view">
+    </umb-overlay>
+
+</div>

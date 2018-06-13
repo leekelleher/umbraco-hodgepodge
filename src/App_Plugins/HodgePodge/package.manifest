@@ -12,6 +12,7 @@
         {
             alias: "Our.Umbraco.NamedDropdown",
             name:  "Named Dropdown",
+            icon: "icon-indent",
             editor: {
                 view: "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown.html",
                 valueType: "STRING"
@@ -80,15 +81,36 @@
                     }
                 ]
             }
-        }
+        },
+        {
+            alias: "Our.Umbraco.Tuple",
+            name:  "Tuple",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/tuple.html",
+                valueType: "JSON"
+            },
+            prevalues: {
+                fields: [
+                    {
+                        label: "Data Types",
+                        description: "Select data types for this tuple.",
+                        key: "dataTypes",
+                        view: "/App_Plugins/HodgePodge/prevalueeditors/datatype-picker.html"
+                    }
+                ]
+            }
+        },
     ],
     javascript: [
+        "~/App_Plugins/HodgePodge/backoffice/hodgepodge.resources.js",
         "~/App_Plugins/HodgePodge/prevalueeditors/checkboxlist.js",
+        "~/App_Plugins/HodgePodge/prevalueeditors/datatype-picker.js",
         "~/App_Plugins/HodgePodge/prevalueeditors/name-value-options.js",
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown.js",
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown-textbox-pair.js",
         "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.js",
-        "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.js"
+        "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.js",
+        "~/App_Plugins/HodgePodge/propertyeditors/tuple.js",
     ],
     css: [
         "~/App_Plugins/HodgePodge/propertyeditors/inline-checkbox.css",

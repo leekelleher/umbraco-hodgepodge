@@ -23,7 +23,7 @@ But they needed somewhere to publicly live, so here we are.
 
 ## Usage and Contributing
 
-Currently, I have no plans to release these components as a standalone Umbraco package. My advise is to cherry-pick the components that you want to use on your own projects. If at some point the Umbraco community creates a demand for this collection of components, I can look at releasing it.
+Currently, I have no plans to release these components as a standalone Umbraco package. My advice is to cherry-pick the components that you want to use on your own projects. If at some point the Umbraco community creates a demand for this collection of components, I can look at releasing it.
 
 In terms of contributings to this collection, please feel free to send over any pull requests. I'll be happy to discuss.
 
