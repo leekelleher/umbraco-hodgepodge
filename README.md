@@ -14,6 +14,7 @@ But they needed somewhere to publicly live, so here we are.
 
 ## Property Editors
 
+- Country Picker
 - Inline Checkbox
 - Named Dropdown
 - Named Dropdown and Textbox Pair
