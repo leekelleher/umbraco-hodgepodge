@@ -82,6 +82,14 @@
                 ]
             }
         },
+        {
+            alias: "Our.Umbraco.CountryPicker",
+            name: "Country Picker",
+            editor: {
+                view: "~/App_Plugins/HodgePodge/propertyeditors/country-picker.html",
+                valueType: "STRING"
+            }
+        },
     ],
     javascript: [
         "~/App_Plugins/HodgePodge/backoffice/hodgepodge.resources.js",
@@ -92,6 +100,7 @@
         "~/App_Plugins/HodgePodge/propertyeditors/named-dropdown-textbox-pair.js",
         "~/App_Plugins/HodgePodge/propertyeditors/textbox-pair.js",
         "~/App_Plugins/HodgePodge/propertyeditors/utc-datetime-picker.js",
+        "~/App_Plugins/HodgePodge/propertyeditors/country-picker.js",
     ],
     css: [
         "~/App_Plugins/HodgePodge/propertyeditors/inline-checkbox.css",
