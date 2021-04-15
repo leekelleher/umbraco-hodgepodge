@@ -1,5 +1,7 @@
 # Umbraco Hodgepodge
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 This collection of miscellaneous Umbraco components are things that felt too small to be their own project.
 
 But they needed somewhere to publicly live, so here we are.
